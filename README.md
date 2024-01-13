@@ -112,7 +112,7 @@ Link do projeto: [https://github.com/lex-sucena/my-Weather-App](https://github.c
 
 ## Agradecimentos
 
-- []()
+- [All the fetch](https://github.com/prof3ssorSt3v3/all-the-fetch)
 - []()
 - []()
 
