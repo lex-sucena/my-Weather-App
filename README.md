@@ -1,5 +1,7 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+
 <a name="readme-top"></a>
+
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -7,8 +9,6 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -32,8 +32,6 @@
     A web-based application to see your current weather info or search other city's weather info.
     
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -61,9 +59,8 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
@@ -72,10 +69,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-
 <!-- GETTING STARTED -->
+
 ## Começando
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -88,16 +83,15 @@ Basta ter acesso à internet e utilizar um navegador de sua escolha.
 ### Utilizando
 
 1. Acesse o navegador de sua escolha
-2. Pesquise pela URL a seguir ou clique aqui.
+2. Pesquise pela URL a seguir ou [clique aqui](https://lex-sucena.github.io/my-Weather-App/).
    ```sh
    https://lex-sucena.github.io/my-Weather-App/
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Uso
 
 Colocar video demo aqui
@@ -105,6 +99,7 @@ Colocar video demo aqui
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
+
 ## Contato
 
 Alexander Sucena - [Linktree](https://linktr.ee/lex.sucena) - alexandersucena@gmail.com
@@ -113,21 +108,19 @@ Link do projeto: [https://github.com/lex-sucena/my-Weather-App](https://github.c
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
+
 ## Agradecimentos
 
-* []()
-* []()
-* []()
+- []()
+- []()
+- []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
@@ -156,4 +149,4 @@ Link do projeto: [https://github.com/lex-sucena/my-Weather-App](https://github.c
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com
