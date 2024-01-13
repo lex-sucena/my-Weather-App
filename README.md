@@ -90,7 +90,7 @@ Basta ter acesso à internet e utilizar um navegador de sua escolha.
 1. Acesse o navegador de sua escolha
 2. Pesquise pela URL a seguir ou clique aqui.
    ```sh
-   Link ficará aqui
+   https://lex-sucena.github.io/my-Weather-App/
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
