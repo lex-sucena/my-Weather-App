@@ -1,23 +1,21 @@
-function getWeather() {
-  let apiKey = "gjaRI8fcGcsgrJ6aO0oO5Q==NbyX2m2krrsB44fP";
-  let city = "london";
-
-  let str = `https://api.api-ninjas.com/v1/weather?city=${city}`;
+function getUserLocation() {
+  navigator.geolocation.getCurrentPosition(success, error);
+  function success(position) {
+    const lat = position.coords.latitude;
+    const long = position.coords.longitude;
+    getUserWeather(lat, long);
+  }
+  function error() {
+    return `No data available`;
+  }
+}
+function getUserWeather(lat, long) {
+  let q = `${lat},${long}`;
+  let apiKey = `6809f4c609f74ca7b9e190423241401`;
+  let str = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${q}&aqi=no&lang=pt`;
   let url = new URL(str);
-  let sp = url.searchParams;
-  sp.append("api-key", "");
 
-  let h = new Headers();
-  h.append("content-type", "application/json");
-  h.append("x-api-key", `${apiKey}`);
-  h.append("Authorization", `Bearer ${apiKey}`);
-
-  let request = new Request(url, {
-    method: "GET",
-    headers: h,
-    cache: "default",
-    credentials: "same-origin",
-  });
+  let request = new Request(url);
 
   fetch(request)
     .then((response) => {
@@ -25,31 +23,31 @@ function getWeather() {
       return response.text();
     })
     .then((txt) => {
-      console.log(txt);
+      const response = JSON.parse(txt);
+      updateInterface(response);
     })
     .catch(console.warn);
 }
-function getLocation() {
-  const apiKey = "0a6426e1acd04e679d285400a2ec3229";
-  let query = "Goiânia";
+function updateInterface(response) {
+  const { _location, current } = response;
+  const { temp_c, condition, wind_kph, humidity, feelslike_c } = current;
+  const { text, icon, _code } = condition;
+  const iconCode = icon.substr(39, 45);
 
-  const url = new URL("https://api.opencagedata.com/geocode/v1/json");
-  const requestUrl =
-    url +
-    "?" +
-    `key=${apiKey}` +
-    `&q=${encodeURIComponent(query)}` +
-    "&pretty=1" +
-    "&no_annotations=1";
-  let request = new Request(requestUrl);
-  fetch(request)
-    .then((response) => {
-      if (!response.ok) throw new Error("invalid");
-      return response.text();
-    })
-    .then((txt) => {
-      console.log(txt);
-    })
-    .catch(console.warn);
+  const cityName = document.getElementById("cityName");
+  const temp = document.getElementById("temp");
+  const condicao = document.getElementById("condition");
+  const tempFeels = document.getElementById("tempFeels");
+  const windSpeed = document.getElementById("windSpeed");
+  const humidade = document.getElementById("humidity");
+  const conditionIcon = document.getElementById("conditionIcon");
+
+  cityName.innerText = `${response.location.name}, ${response.location.region}`;
+  temp.innerText = `${temp_c}°C`;
+  condicao.innerText = text;
+  tempFeels.innerText = `${feelslike_c}°C`;
+  windSpeed.innerText = `${wind_kph} KM/h`;
+  humidade.innerText = `${humidity}%`;
+  conditionIcon.src = `/assets/images/weather-icons/${iconCode}`;
 }
-getLocation();
+window.addEventListener("load", getUserLocation);
