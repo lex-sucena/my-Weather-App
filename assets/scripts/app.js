@@ -48,6 +48,6 @@ function updateInterface(response) {
   tempFeels.innerText = `${feelslike_c}°C`;
   windSpeed.innerText = `${wind_kph} KM/h`;
   humidade.innerText = `${humidity}%`;
-  conditionIcon.src = `/assets/images/weather-icons/${iconCode}`;
+  conditionIcon.src = `https://github.com/lex-sucena/my-Weather-App/blob/main/assets/images/weather-icons/${iconCode}`;
 }
 window.addEventListener("load", getUserLocation);
