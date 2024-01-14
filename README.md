@@ -1,6 +1,8 @@
-# My Weather App
-
+<div align="center">
+<h1>My Weather App</h1>
 Uma aplicação web que informa sobre o clima da sua cidade atual.
+</div>
+
 
 ## Descrição
 
@@ -8,9 +10,13 @@ O programa consome a [Geolocation API](https://developer.mozilla.org/en-US/docs/
 
 ## Utilizando
 
+### Acesse online
+
+Para acessar o programa, basta clicar [aqui](https://lex-sucena.github.io/my-Weather-App/).
+
 ### Clone o programa
 
-- Inicie o git bash em um diretório de sua preferencia. 
+- Inicie o git bash em um diretório de sua preferencia.
 - Copie, cole e dê enter no comando a seguir:
 
 ```
@@ -18,6 +24,7 @@ git clone git@github.com:lex-sucena/my-Weather-App.git
 ```
 
 ## Autor
+
 Alexander Sucena - [Linktree](https://linktr.ee/lex.sucena)
 
 ## License
@@ -25,7 +32,6 @@ Alexander Sucena - [Linktree](https://linktr.ee/lex.sucena)
 Este projeto está licenciado sob a licença GNU GPLv3 - consulte o arquivo [LICENSE.md](https://github.com/lex-sucena/my-Weather-App/blob/main/LICENSE) para obter detalhes.
 
 ## Agradecimentos
-
 
 - [Choose a license](https://choosealicense.com/)
 - [Weather API](https://choosealicense.com/)
