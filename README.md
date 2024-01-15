@@ -28,13 +28,14 @@ git clone git@github.com:lex-sucena/my-Weather-App.git
 ```
 
 2. Abra o projeto em seu editor de código.
-3. Explore os arquivos index.html e script.js para entender sobre o funcionamento.
+3. Explore os arquivos index.html e app.js para entender sobre o funcionamento.
 
 ## Autor 📝
 
 Alexander Sucena - [Linktree](https://linktr.ee/lex.sucena)
 
-## License 
+## License
+
 Este projeto está licenciado sob a licença GNU GPLv3 - consulte o arquivo [LICENSE.md](https://github.com/lex-sucena/my-Weather-App/blob/main/LICENSE) para obter detalhes.
 
 ## Agradecimentos
