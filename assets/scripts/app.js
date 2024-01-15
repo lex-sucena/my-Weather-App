@@ -6,7 +6,7 @@ function getUserLocation() {
     getUserWeather(lat, long);
   }
   function error() {
-    return `No data available`;
+    return alert(`Suas informações de localização não estão disponíveis.`);
   }
 }
 function getUserWeather(lat, long) {
@@ -19,7 +19,7 @@ function getUserWeather(lat, long) {
 
   fetch(request)
     .then((response) => {
-      if (!response.ok) throw new Error("invalid");
+      if (!response.ok) throw new Error(`ERROR: ${response.status}`);
       return response.text();
     })
     .then((txt) => {
