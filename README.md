@@ -6,7 +6,7 @@ Uma aplicação web que informa sobre o clima da sua cidade atual.
 
 ## Descrição
 
-O programa consome a [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) para pegar as coordenadas da localização do usuário, essas coordenadas são utilizadas para fazer o request para uma outra API, a [Weather API](https://choosealicense.com/), que fornece informações do clima baseado na localização enviada.
+O programa consome a [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) para pegar as coordenadas da localização do usuário, essas coordenadas são utilizadas para fazer o request para uma outra API, a [Weather API](https://www.weatherapi.com/), que fornece informações do clima baseado na localização enviada.
 
 ## Utilizando
 
