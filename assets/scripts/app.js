@@ -12,7 +12,7 @@ function getUserLocation() {
 function getUserWeather(lat, long) {
   let q = `${lat},${long}`;
   let apiKey = `6809f4c609f74ca7b9e190423241401`;
-  let str = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${q}&aqi=no&lang=pt`;
+  let str = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${q}&aqi=no&lang=pt`;
   let url = new URL(str);
 
   let request = new Request(url);
